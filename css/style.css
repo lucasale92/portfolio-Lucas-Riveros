@@ -359,41 +359,37 @@ body {
   }
     
   /*--------------------------------------------------------------
-  # Akills
+  # Skills
   --------------------------------------------------------------*/
-  .skills .progress {
-    height: 50px;
-    display: block;
-    background: none;
-  }
-  
-  .skills .progress .skill {
-    padding: 0;
-    margin: 0 0 6px 0;
+  .skills-content h4 {
     text-transform: uppercase;
-    display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
   }
-  
-  .skills .progress .skill .val {
-    float: right;
-    font-style: normal;
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  
-  .skills .progress-bar-wrap {
-    background: #dce8f8;
+
+  .skill-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #149ddd;
+    color: #149ddd;
+    font-size: 14px;
+    transition: 0.3s;
   }
-  
-  .skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: .9s;
-    background-color: #149ddd;
+
+  .skill-tag:hover {
+    background: #149ddd;
+    color: #fff;
   }
-  
-  /*--------------------------------------------------------------
 
   /*--------------------------------------------------------------
   # Portfolio
