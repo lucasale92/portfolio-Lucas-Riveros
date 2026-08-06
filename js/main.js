@@ -83,6 +83,13 @@
           $(".nav-menu ul:first li:first").addClass('active');
         }
       });
+
+      // Al llegar al final de la página, activar siempre la última sección
+      // (si es corta, cur_pos puede pasarse de su "bottom" y no matchear arriba)
+      if ($(window).scrollTop() + $(window).height() >= $(document).height() - 5) {
+        main_nav.find('li').removeClass('active');
+        main_nav.find('a[href="#' + nav_sections.last().attr('id') + '"]').parent('li').addClass('active');
+      }
     });
   
     // Back to top button
